@@ -11,8 +11,6 @@ class DefaultController extends Controller
 {
     public function index()
     {
-        \Conf::set('foo.bar', 'bazzz');
-
-        return new JsonResponse(['message' => 'All good']);
+        return new JsonResponse(['message' => \Conf::get('foo.bar')]);
     }
 }

@@ -6,7 +6,7 @@ return [
 
     'drivers' => [
         'file' => [
-            'path' => storage_path('conf.json'),
+            'path' => storage_path('app/conf.json'),
         ],
     ],
 ];
