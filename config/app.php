@@ -156,6 +156,13 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+
+        Gaaarfild\LaravelConf\LaravelConfServiceProvider::class,
+        Gaaarfild\LaravelNotifications\LaravelNotificationsServiceProvider::class,
+        Gaaarfild\LaravelPinger\LaravelPingerServiceProvider::class,
+        Gaaarfild\LaravelTitle\LaravelTitleServiceProvider::class,
+
     ],
 
     /*
@@ -201,6 +208,11 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        'Conf' => Gaaarfild\LaravelConf\ConfFacade::class,
+        'Notifications' => Gaaarfild\LaravelNotifications\NotificationsFacade::class,
+        'Pinger' => Gaaarfild\LaravelPinger\PingerFacade::class,
+        'Title' => Gaaarfild\LaravelTitle\TitleFacade::class,
 
     ],
 

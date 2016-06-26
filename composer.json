@@ -13,7 +13,8 @@
         "gaaarfild/laravel-conf": "1.*",
         "gaaarfild/laravel-notifications": "1.*",
         "gaaarfild/laravel-pinger": "1.*",
-        "gaaarfild/laravel-title": "1.*"
+        "gaaarfild/laravel-title": "1.*",
+        "barryvdh/laravel-ide-helper": "^2.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
