@@ -6,12 +6,15 @@ services:
         volumes:
             - ./:/srv/www/mypackages/current
             - ./storage/logs:/srv/www/mypackages/current/storage/logs
-        volumes_from:
-            - swagger-ui
+#        volumes_from:
+#            - swagger-ui
         environment:
             APPLICATION_ENV: develop
+        links:
+            - mysql
 
     elk:
+        container_name: docker_elk
         image: willdurand/elk
         ports:
             - "81:80"
@@ -21,6 +24,14 @@ services:
         volumes_from:
             - php
             - nginx
+
+    mysql:
+        container_name: docker_mysql
+        image: mysql:5.7
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+        ports:
+            - "3306:3306"
 
     nginx:
         container_name: docker_nginx
@@ -33,6 +44,7 @@ services:
             - "80:80"
         links:
             - php
+            - mysql
 #
 #    blackfire:
 #        container_name: docker_blackfire
@@ -40,6 +52,6 @@ services:
 #        environment:
 #            - BLACKFIRE_SERVER_ID=12d1eedb-8e65-4053-a9fc-5f419cd0f675
 #            - BLACKFIRE_SERVER_TOKEN=3d78daaa250227ec559d809c8e73c56867013bb7f2fb0c1bde75c3aadf57e4f0
-
-    swagger-ui:
-        build: ./docker/operations/swagger-ui
+#
+#    swagger-ui:
+#        build: ./docker/operations/swagger-ui
