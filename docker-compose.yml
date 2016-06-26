@@ -1,0 +1,45 @@
+version: '2'
+services:
+    php:
+        container_name: docker_php
+        build: ./docker/operations/php/
+        volumes:
+            - ./:/srv/www/mypackages/current
+            - ./storage/logs:/srv/www/mypackages/current/storage/logs
+        volumes_from:
+            - swagger-ui
+        environment:
+            APPLICATION_ENV: develop
+
+    elk:
+        image: willdurand/elk
+        ports:
+            - "81:80"
+        volumes:
+            - ./docker/operations/elk/logstash:/etc/logstash
+            - ./docker/operations/elk/logstash/patterns:/opt/logstash/patterns
+        volumes_from:
+            - php
+            - nginx
+
+    nginx:
+        container_name: docker_nginx
+        build: ./docker/operations/nginx/
+        volumes:
+            - ./storage/logs/nginx/:/var/log/nginx
+        volumes_from:
+            - php
+        ports:
+            - "80:80"
+        links:
+            - php
+#
+#    blackfire:
+#        container_name: docker_blackfire
+#        image: blackfire/blackfire
+#        environment:
+#            - BLACKFIRE_SERVER_ID=12d1eedb-8e65-4053-a9fc-5f419cd0f675
+#            - BLACKFIRE_SERVER_TOKEN=3d78daaa250227ec559d809c8e73c56867013bb7f2fb0c1bde75c3aadf57e4f0
+
+    swagger-ui:
+        build: ./docker/operations/swagger-ui
