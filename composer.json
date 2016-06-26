@@ -1,12 +1,19 @@
 {
     "name": "laravel/laravel",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.2.*"
+        "laravel/framework": "5.2.*",
+        "gaaarfild/laravel-conf": "1.*",
+        "gaaarfild/laravel-notifications": "1.*",
+        "gaaarfild/laravel-pinger": "1.*",
+        "gaaarfild/laravel-title": "1.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -46,5 +53,23 @@
     },
     "config": {
         "preferred-install": "dist"
-    }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:gaaarfild/laravel-conf.git"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:gaaarfild/laravel-pinger.git"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:gaaarfild/laravel-notifications.git"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:gaaarfild/laravel-title.git"
+        }
+    ]
 }

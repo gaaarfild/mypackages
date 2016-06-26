@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c284a9c122da36c99a8b6597bdce7aa6",
-    "content-hash": "8b1485987e7c5949da82435d403e52e8",
+    "hash": "3ab33d5bc0891cfdfefd17b975c68b84",
+    "content-hash": "d424608e00ae5cbe15b1f1c58698e721",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -160,6 +160,157 @@
                 "string"
             ],
             "time": "2015-11-06 14:35:42"
+        },
+        {
+            "name": "gaaarfild/laravel-conf",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:gaaarfild/laravel-conf.git",
+                "reference": "b7139b74738ed01bc42d4fdd69c86b60739cb5c2"
+            },
+            "require": {
+                "illuminate/support": ">=4.2",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gaaarfild\\LaravelConf\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dinar Garipov",
+                    "email": "garipov.dinar@gmail.com"
+                }
+            ],
+            "description": "Store additional configs in JSON (write, read)",
+            "keywords": [
+                "config",
+                "laravel"
+            ],
+            "time": "2016-06-20 17:01:45"
+        },
+        {
+            "name": "gaaarfild/laravel-notifications",
+            "version": "v1.2.5",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:gaaarfild/laravel-notifications.git",
+                "reference": "c6673260e799870818d65d17e9613886f88e532b"
+            },
+            "require": {
+                "illuminate/support": ">=5.1.3 <5.3",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gaaarfild\\LaravelNotifications\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dinar Garipov",
+                    "email": "garipov.dinar@gmail.com"
+                }
+            ],
+            "description": "Convenient flash notifications",
+            "keywords": [
+                "laravel",
+                "notifications"
+            ],
+            "time": "2016-06-14 13:10:14"
+        },
+        {
+            "name": "gaaarfild/laravel-pinger",
+            "version": "v1.2.4",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:gaaarfild/laravel-pinger.git",
+                "reference": "cee7df49e0ee06f2dd01385a8b9b42946c767c46"
+            },
+            "require": {
+                "illuminate/support": ">=4.2",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gaaarfild\\LaravelPinger\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dinar Garipov",
+                    "email": "garipov.dinar@gmail.com"
+                }
+            ],
+            "description": "Ping search engines about website updates",
+            "keywords": [
+                "bing",
+                "google",
+                "laravel",
+                "ping",
+                "ping-o-matic",
+                "pingomatic",
+                "search engines",
+                "yahoo",
+                "yandex"
+            ],
+            "time": "2016-06-23 14:33:50"
+        },
+        {
+            "name": "gaaarfild/laravel-title",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:gaaarfild/laravel-title.git",
+                "reference": "e6da51a2a3101329c30dc16f8c47baa5405f0b28"
+            },
+            "require": {
+                "illuminate/support": ">=4.2",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gaaarfild\\LaravelTitle\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dinar Garipov",
+                    "email": "garipov.dinar@gmail.com"
+                }
+            ],
+            "description": "Convenient seo-titles assembler for your web application",
+            "keywords": [
+                "Page title",
+                "laravel",
+                "meta",
+                "seo"
+            ],
+            "time": "2015-12-25 21:56:37"
         },
         {
             "name": "jakub-onderka/php-console-color",
