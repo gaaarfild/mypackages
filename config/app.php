@@ -158,10 +158,10 @@ return [
 
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
-        Gaaarfild\LaravelConf\LaravelConfServiceProvider::class,
-        Gaaarfild\LaravelNotifications\LaravelNotificationsServiceProvider::class,
-        Gaaarfild\LaravelPinger\LaravelPingerServiceProvider::class,
-        Gaaarfild\LaravelTitle\LaravelTitleServiceProvider::class,
+        Garf\LaravelConf\LaravelConfServiceProvider::class,
+        Garf\LaravelNotifications\LaravelNotificationsServiceProvider::class,
+        Garf\LaravelPinger\LaravelPingerServiceProvider::class,
+        Garf\LaravelTitle\LaravelTitleServiceProvider::class,
 
     ],
 
@@ -209,10 +209,10 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-        'Conf' => Gaaarfild\LaravelConf\ConfFacade::class,
-        'Notifications' => Gaaarfild\LaravelNotifications\NotificationsFacade::class,
-        'Pinger' => Gaaarfild\LaravelPinger\PingerFacade::class,
-        'Title' => Gaaarfild\LaravelTitle\TitleFacade::class,
+        'Conf' => Garf\LaravelConf\ConfFacade::class,
+        'Notifications' => Garf\LaravelNotifications\NotificationsFacade::class,
+        'Pinger' => Garf\LaravelPinger\PingerFacade::class,
+        'Title' => Garf\LaravelTitle\TitleFacade::class,
 
     ],
 

@@ -11,9 +11,9 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
         "garf/laravel-conf": "^3.0",
-        "gaaarfild/laravel-notifications": "1.*",
-        "gaaarfild/laravel-pinger": "1.*",
-        "gaaarfild/laravel-title": "1.*",
+        "garf/laravel-notifications": "2.*",
+        "garf/laravel-pinger": "2.*",
+        "garf/laravel-title": "2.*",
         "barryvdh/laravel-ide-helper": "^2.2"
     },
     "require-dev": {
