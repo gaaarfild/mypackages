@@ -10,7 +10,7 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
-        "gaaarfild/laravel-conf": "1.*",
+        "garf/laravel-conf": "^3.0",
         "gaaarfild/laravel-notifications": "1.*",
         "gaaarfild/laravel-pinger": "1.*",
         "gaaarfild/laravel-title": "1.*",
@@ -58,19 +58,19 @@
     "repositories": [
         {
             "type": "git",
-            "url": "git@github.com:gaaarfild/laravel-conf.git"
+            "url": "git@github.com:garf/laravel-conf.git"
         },
         {
             "type": "git",
-            "url": "git@github.com:gaaarfild/laravel-pinger.git"
+            "url": "git@github.com:garf/laravel-pinger.git"
         },
         {
             "type": "git",
-            "url": "git@github.com:gaaarfild/laravel-notifications.git"
+            "url": "git@github.com:garf/laravel-notifications.git"
         },
         {
             "type": "git",
-            "url": "git@github.com:gaaarfild/laravel-title.git"
+            "url": "git@github.com:garf/laravel-title.git"
         }
     ]
 }
